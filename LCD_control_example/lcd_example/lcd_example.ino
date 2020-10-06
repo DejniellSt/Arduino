@@ -94,7 +94,7 @@ void loop()
       // scroll one position right:
       lcd.scrollDisplayRight();
       // wait a bit:
-      delay(300);
+      delay(100);
       break;
      }
      break;
