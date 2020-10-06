@@ -14,6 +14,11 @@ int adc_key_in  = 0;
 #define btnSELECT 4
 #define btnNONE   5
 
+
+//relay module 
+// int relayPin1 = 4;  //This is the Arduino Pin that will control Relay #1
+// int relayPin2 = 6;  //This is the Arduino Pin that will control Relay #2
+
 // read the buttons
 int read_LCD_buttons()
 {
@@ -36,12 +41,26 @@ void setup()
   lcd.begin(16, 2);             
   lcd.setCursor(0,0);           
   lcd.print("Push the buttons");
+  /* for realy
+  pinMode(relayPin1, OUTPUT);
+  pinMode(relayPin2, OUTPUT);
+  */
   }
 
 double value_V;
 
 void loop()
 {
+  // Relay module
+  // put your main code here, to run repeatedly: 
+  /*digitalWrite(relayPin1, HIGH);
+  delay(1000);
+  digitalWrite(relayPin1, LOW);
+  digitalWrite(relayPin2, HIGH);
+  delay(1000);
+  digitalWrite(relayPin2, LOW);
+  delay(1000);
+  */
    /* swich on/off display
      lcd.noDisplay();
      delay(500);
